@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job application</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Job Applicaiton</h1>
+        <h2>(Web)</h2>
+      </header>
+      <main>
+        <div class="input">
+          <label for="fname">FirstName</label>
+          <input type="text" name="FirstName" id="fname" />
+        </div>
+        <div class="input">
+          <label for="lname">LastName</label>
+          <input type="text" name="LirstName" id="lname" />
+        </div>
+        <div class="input">
+          <label for="email">Email</label>
+          <input type="email" name="EMAIL" id="email" />
+        </div>
+        <div class="input">
+          <label for="role">Job Role</label>
+          <select name="ROLE" id="role" class="other">
+            <option selected>Select job Role</option>
+            <option value="frontEndDev">frontEndDev</option>
+            <option value="backEndDev">backEndDev</option>
+            <option value="fullStackDev">fullStackDev</option>
+          </select>
+        </div>
+        <div class="input Address">
+          <label for="address">Address</label>
+          <textarea name="ADDRESS" id="address" class="other"></textarea>
+        </div>
+        <div class="input">
+          <label for="city">City</label>
+          <input type="text" name="CITY" id="city" />
+        </div>
+        <div class="input">
+          <label for="pin">Pincode</label>
+          <input type="number" name="code" id="pin" />
+        </div>
+        <div class="input">
+          <label for="date">Start Date</label>
+          <input type="date" name="DATE" id="date" />
+        </div>
+        <div class="input ">
+          <label for="cv">Upload your CV</label>
+          <input type="file" name="CV" id="cv" />
+        </div>
+      </main>
+      <footer><button>Apply Now</button></footer>
+    </div>
+  </body>
+</html>

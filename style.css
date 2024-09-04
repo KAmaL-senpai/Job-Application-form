@@ -1,0 +1,81 @@
+.container {
+  background-color: #fff;
+  /* width: 40%; */
+  padding: 2rem;
+  border-radius: 10px;
+  border: 2px solid black;
+  position: relative;
+}
+header{
+    display: flex;
+    justify-content: flex-start;
+    font-family: sans-serif;
+    gap: 20px;
+}
+header h1{
+    font-size: 2rem;
+}
+header h2{
+    padding-top: 8px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+.Address{
+    grid-column: span 2;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+}
+.input input{
+    height: 3rem;
+    border-radius: 5px;
+}
+.other{
+    height: 3rem;
+    border: 2px solid black;
+}
+input[type="file"]{
+    cursor: pointer;
+    padding: 1rem;
+    border: 2px solid black;
+    height: 1rem;
+}
+button{
+    position: absolute;
+    bottom: 8px;
+    right: 50px;
+    width: 150px;
+    height: 50px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    font-size: larger;
+    border: none;
+    border-radius: 5px;
+}
+@media (max-width: 1245px) {
+    .container {
+      width: 90%; /* Make the form container wider for smaller screens */
+    }
+  
+    main {
+      display: grid;
+      grid-template-columns: 1fr; /* Single column layout */
+      gap: 1rem; /* Reduce gap for smaller screens */
+    }
+  
+    .Address {
+      grid-column: span 1; /* No need to span columns in single-column layout */
+    }
+  
+    button {
+      right: 20px; /* Adjust button position for smaller screens */
+    }
+  }
